@@ -1,0 +1,22 @@
+[project]
+name = "genai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Gautam kumar thakur", email = "gautam.thakur@atpl.live" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.5",
+    "sentence-transformers>=6.1.0",
+    "torch>=2.14.1",
+    "transformers>=5.19.0",
+]
+
+[project.scripts]
+genai = "genai:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
